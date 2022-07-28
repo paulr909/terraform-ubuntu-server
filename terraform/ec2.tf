@@ -21,7 +21,7 @@ resource "aws_instance" "ubuntu" {
   vpc_security_group_ids = [
     aws_security_group.ubuntu.id
   ]
-  user_data       = file("../setup-directories.sh")
+  user_data       = file("../provision.sh")
   key_name        = "${var.project_name}-server-kp"
   security_groups = [aws_security_group.ubuntu.name]
 
