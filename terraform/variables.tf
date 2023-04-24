@@ -11,6 +11,6 @@ variable "project_name" {
 }
 
 variable "availability_zone" {
-  type    = string
   default = "eu-west-2a"
+  type    = string
 }
